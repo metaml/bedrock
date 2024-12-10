@@ -1,4 +1,4 @@
-.DEFAULT_GOAL = plan
+.DEFAULT_GOAL = help
 
 #export ACCOUNT_ID = 975050288432
 export SHELL=bash
@@ -14,9 +14,9 @@ dev: ## nix develop
 MODELID   = meta.llama3-2-1b-instruct-v1:0    # foundational model
 MODELIDIP = us.$(MODELID) # inference profile
 
-converse: ## converse
+llama: ## converse
 	source .env \
-	&& ./converse.py
+	&& ./llama.py
 
 invoke-model: ## invoke-model
 	source .env \
