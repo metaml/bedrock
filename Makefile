@@ -11,7 +11,7 @@ aws-id: ## aws identity
 dev: ## nix develop
 	nix develop
 
-MODELID   = meta.llama3-2-1b-instruct-v1:0    # foundational model
+MODELID   = meta.llama3-1-70b-instruct-v1:0    # foundational model
 MODELIDIP = us.$(MODELID) # inference profile
 
 llama: ## converse
