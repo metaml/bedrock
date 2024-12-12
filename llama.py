@@ -5,7 +5,8 @@ import boto3
 import json
 
 client = boto3.client("bedrock-runtime", region_name="us-east-1")
-model_id = "us.meta.llama3-1-70b-instruct-v1:0"
+model_id = "us.meta.llama3-2-3b-instruct-v1:0"
+#model_id = "us.meta.llama3-1-70b-instruct-v1:0"
 prompt = "Hello, who won the 2022 World Cup?"
 
 # embed the prompt in Llama 3's instruction format.
